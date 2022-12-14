@@ -6,7 +6,9 @@ var carrinho = "";
 
 window.onload = function(){
     montaCards();
+
 }
+
 
 function montaCards(){
     document.getElementById("cards-area").innerHTML = "";
@@ -15,24 +17,35 @@ function montaCards(){
     {
         var conteudo = "";
 
-        conteudo += '<div class="card" >';
-        conteudo += '<div class="card-img">';
+        conteudo += '<div class="card" id="card" onmouseover="mouseOver()" onmouseout="mouseOut()">';
+        conteudo += '<div class="card-img" >';
         conteudo += '<img class="img"  src="img/' + array_products[i][0] + '" />';
         conteudo += '</div>';
-        conteudo += '<div class="card-nome">' + array_products[i][1] + '</div>';
+        conteudo += '<div class="card-nome" >' + array_products[i][1] + '</div>';
         conteudo += '<div class="card-price">' + array_products[i][2] + '</div>';
+        conteudo += '<div class="btn2" id="cardID"></div>'
         conteudo += '</div>';
-        
-
-
-
 
         document.getElementById("cards-area").innerHTML += conteudo;
 
-
+ 
+           
     }
+    
 
 }
+
+function mouseOver(){
+    document.getElementById("cardID").innerHTML = "<button class='btn2'>Ver detalhes</button>";
+}
+
+function mouseOut(){
+    document.getElementById("cardID").innerHTML = "";
+}
+
+
+
+
 
 function verify(){
     $.ajax({
@@ -51,6 +64,9 @@ function verify(){
 
     })
 }
+
+
+
 
 
 
