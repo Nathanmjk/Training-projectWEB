@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/opencall.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/opencall.js"></script>
+    
+    <title>Chamados</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="logo">
+           <h1><a href="../../index.html">Site suporte</a></h1> 
+        </div>
+        <button class="bt">&#9776;</button>
+        <ul class="text">
+            
+            <li>
+                <p >Sobre</p>
+                
+            </li>
+            <li>
+                <p>Loja</p>
+                
+            </li>
+            <li>
+                <p>Contato</p>
+                
+            </li>
+            <li>
+                <p ><a id="Call" onclick="exit()">sair</a></p>
+                
+            </li>
+        </ul>
+    </nav>
+    <div class="title"  data-aos="fade-up">
+         <h1>Chamados</h1>
+        <button class="btn" type="button" onclick="acess()"> Abrir Chamado</button>
+    </div>
+
+    <div class="called"  data-aos="fade-up" id="viewTable">
+        <table class="table">
+            <tr class="line">
+                <td> ID</td>
+                <td> tipo </td>
+                <td> comentario</td>
+                <td> situação</td>
+                <td> Cancelar</td>
+            </tr>
+            <tr class="corp-line">
+                <td><a class="ID" href=""> 01</a></td>
+                <td>Impressora</td>
+                <td> Analiseasdsa adsa</td>
+                <td> Em andamento</td>
+                <td> X</td>
+            </tr>
+            <tr class="corp-line">
+                <td><a class="ID" href=""> 01</a></td>
+                <td>Impressora</td>
+                <td> Analiseasdsa adsa</td>
+                <td> Encerrado</td>
+                <td> </td>
+            </tr>
+            <tr class="corp-line">
+                <td><a class="ID" href=""> 01</a></td>
+                <td>Impressora</td>
+                <td> Analiseasdsa adsa</td>
+                <td> Encerrado</td>
+                <td> </td>
+            </tr>
+            <tr class="corp-line">
+                <td><a class="ID" href=""> 01</a></td>
+                <td>Impressora</td>
+                <td> Analiseasdsa adsa</td>
+                <td> Encerrado</td>
+                <td> </td>
+            </tr>
+            <tr class="corp-line">
+                <td><a class="ID" href=""> 01</a></td>
+                <td>Impressora</td>
+                <td> Analiseasdsa adsa</td>
+                <td> Encerrado</td>
+                <td> </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
+
+</body>
+</html>

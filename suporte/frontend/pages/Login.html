@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Site Suporte</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</head>
+<body  data-aos="fade-right">
+    <button   type="button" onclick="back()" class="logo"> Site Suporte</button>
+    <div class="form">
+
+        <div class="card" >
+           
+            <form action="" id="form">
+                <h3>email:</h3>
+                <input class="input" type="text" id="email" placeholder="Insira o email" required>
+                <h3>Senha:</h3>
+                <input class="input" type="password" name="password" id="password" placeholder="Insira sua senha" required>
+                <input  type="hidden" name="Hashpassword" id="passwordHash">
+                <div class="subtitle" id="subtitle"></div>
+                <div class="check">
+                    <input type="checkbox"> <h2>manter-me conectado</h2>
+
+                </div>
+                <div>
+                    <a class="forgotPassword" href=""> Esqueci minha senha</a>
+                </div>
+                <button class="button" onclick="validate()" type="button">Entrar</button>
+               
+            </form>
+        </div>
+       
+    </div>
+
+
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
+</body>
+</html>

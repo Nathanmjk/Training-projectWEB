@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir chamado</title>
+    <link rel="stylesheet" href="../css/open.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/open.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h1><a href="../../index.html">Site suporte</a></h1> 
+        </div>
+        <button class="bt">&#9776;</button>
+        <ul class="text">
+            
+            <li>
+                <p >Sobre</p>
+                
+            </li>
+            <li>
+                <p>Loja</p>
+                
+            </li>
+            <li>
+                <p>Contato</p>
+                
+            </li>
+            <li>
+                <p ><a id="Call" onclick="exit()">sair</a></p>
+                
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <button class="back" onclick="back()" type="button">Voltar </button>
+    </div>
+    <div class="form">
+        <form action="" id="form">
+            <table class="table">
+                <tr> <td><h3 class="title">Nome*:</h3></td>
+                    <td> <input type="text" id="name" placeholder="Nome completo"></td>
+                </tr>
+                <tr> <td><h3 class="title">Setor*:</h3></td>
+                    <td> <input type="text" id="sector" placeholder="Setor"></td>
+                </tr>
+                <tr> <td class="title">
+                     <h3 >Categoria*: </h3>
+                    </td>
+                    <td>
+                       <select name="" id="category">
+                        <option value="IMP">Selecione</option>
+                        <option value="IMP">Impressora</option>
+                        <option value="PC"> Computador</option>
+                        <option value="Net">Internet</option>
+                        <option value="Other">Outro</option>
+                       </select>
+                    </td>
+                </tr>
+                <tr> <td><h3 class="title">Anexo:</h3></td>
+                    <td> <input class="upload" type="file" id="upload" placeholder="Selct file"></td>
+                </tr>
+                <tr> <td><h3 class="title">Comentário:</h3></td>
+                    <td> <input class="comment" type="text" id="commentary" placeholder="Insira um Comentário"></td>
+                </tr>
+            </table>
+        </form>
+      
+        <div class="button-area">
+            <button class="button" onclick="request()" type="button">Enviar</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
