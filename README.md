@@ -1,5 +1,3 @@
-# Site Web-support
-### Autor: Nathan Machado Josviak
 
 Projeto criado nas férias para por em prática os conteudos aprendidos durante as aulas
 
