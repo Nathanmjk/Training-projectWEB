@@ -7,7 +7,7 @@ As tecnologias para realizar o site foram:
 
 ## Back-end:
 - PHP
-- Python
+
 - Mysql
 
 ## Front-end:
